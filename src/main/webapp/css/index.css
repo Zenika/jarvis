@@ -1,0 +1,59 @@
+.zenika-red {
+    color: #942723;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.zenika-logo {
+    width: 80px;
+}
+
+.footer {
+    width: 100px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.v-align-middle {
+    vertical-align: middle;
+}
+
+.img-cover {
+    height: 250px;
+    float: left;
+    margin-right: 30px;
+}
+
+.img-mini {
+    max-height: 100px;
+    float: left;
+    margin-right: 30px;
+}
+
+th {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.navbar-zenika {
+	border-color: #80191b;
+	border-top-color: rgb(128, 25, 27);
+	border-right-color: rgb(128, 25, 27);
+	border-bottom-color: rgb(128, 25, 27);
+	border-left-color: rgb(128, 25, 27);
+	background-image: linear-gradient(to bottom, #a71e21, #80191b);
+	color: white;
+}
+
+.navbar-text {
+	color:white;
+}
+
+.spaced-table>tbody>tr>th, .spaced-table>tbody>tr>td {
+	padding-top: 9px;
+}

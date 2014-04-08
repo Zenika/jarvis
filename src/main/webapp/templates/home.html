@@ -1,0 +1,12 @@
+<table class="table table-striped table-bordered table-hover table-condensed">
+    <tr>
+        <th>Nom</th>
+        <th>Url</th>
+        <th>Color</th>
+    </tr>
+    <tr ng-repeat="job in jobs">
+        <td class="text-muted"><h6>{{job.name}}</h6></td>
+        <td><a href="{{job.url}}">{{job.url}}</a></td>
+        <td><img ng-src="images/{{job.color}}.png"></td>
+    </tr>
+</table>
