@@ -7,6 +7,6 @@
     <tr ng-repeat="job in jobs">
         <td class="text-muted"><h6>{{job.name}}</h6></td>
         <td><a href="{{job.url}}">{{job.url}}</a></td>
-        <td><img ng-src="images/{{job.color}}.png"></td>
+        <td><img ng-src="http://localhost:8090/static/9444ee44/images/32x32/{{job.color == 'notbuilt' ? 'nobuilt' : job.color}}.gif"></td>
     </tr>
 </table>
