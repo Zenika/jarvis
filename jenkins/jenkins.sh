@@ -8,4 +8,4 @@ echo Install APT Packages
 	apt-get update
 
 echo Installing Jenkins
-	apt-get install -y jenkins
+	apt-get install -y jenkins git openjdk-7-jdk maven
