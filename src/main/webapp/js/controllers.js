@@ -1,5 +1,5 @@
 (function() {
-    var Controllers = angular.module('Controllers', ['Services']);
+    var Controllers = angular.module('Controllers', ['Services', 'ui.bootstrap']);
     Controllers.controller('HomeController', function ($scope, $location, Jobs) {
         $scope.goHome = function () {
             $location.path("/");
@@ -9,6 +9,13 @@
         Jobs.getJobs().then(function(data) {
             $scope.jobs = data.data.jobs;
         });
+
+        $scope.loadJob = function(jobName) {
+
+            Jobs.getJob(jobName).then(function(resp) {
+               $scope.jobDetail = resp.data;
+            });
+        }
     });
 })();
 

@@ -7,7 +7,7 @@
         // Returning promises instead of using callbacks.
         return {
             getJobs : function() {return $http.get('/api/jobs');},
-            getJob : function() {return $http.get('/api/job');}
+            getJob : function(jobName) {return $http.get('/api/job/' + jobName);}
         };
     });
 })();

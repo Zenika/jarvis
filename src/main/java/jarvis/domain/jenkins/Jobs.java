@@ -1,11 +1,13 @@
 package jarvis.domain.jenkins;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.google.common.base.Objects;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Jobs {
 
     @JsonIgnore

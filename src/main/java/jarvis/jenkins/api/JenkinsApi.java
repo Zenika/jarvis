@@ -26,4 +26,5 @@ public class JenkinsApi {
     public Job getJob(String jobName) {
         return restTemplate.getForObject(url + "job/{jobName}/"+ API_JSON, Job.class, jobName);
     }
+
 }
