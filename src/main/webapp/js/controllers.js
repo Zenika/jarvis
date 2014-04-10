@@ -1,13 +1,17 @@
-var Controllers = angular.module('Controllers', ['Services']);
+(function() {
+    var Controllers = angular.module('Controllers', ['Services']);
+    Controllers.controller('HomeController', function ($scope, $location, Jobs) {
+        $scope.goHome = function () {
+            $location.path("/");
+        };
 
-Controllers.controller('HomeController', function ($scope, $location, Jobs) {
-    $scope.goHome = function () {
-        $location.path("/");
-    };
-
-    Jobs.getJobs(function(data) {
-        $scope.jobs = data.jobs;
+        // Handling the promise
+        Jobs.getJobs().then(function(data) {
+            $scope.jobs = data.data.jobs;
+        });
     });
-})
+})();
+
+
 
 
