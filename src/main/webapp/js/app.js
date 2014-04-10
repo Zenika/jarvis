@@ -1,7 +1,8 @@
-var app = angular.module("jarvis", ['ngRoute', 'ngCookies', 'Controllers']);
+(function() {
+    var app = angular.module("jarvis", ['ngRoute', 'ngCookies', 'Controllers']);
 
-app.config(function ($routeProvider) {
-        $routeProvider.when('/', {templateUrl:'templates/home.html', controller:'HomeController'})
+    app.config(function ($routeProvider) {
+        $routeProvider.when('/', {templateUrl:'templates/home.html', controller:'HomeController'});
         $routeProvider.otherwise({redirectTo : '/'});
 
 //        $httpProvider.defaults.headers.common = 'Accept: application/json';
@@ -15,3 +16,5 @@ app.config(function ($routeProvider) {
 //        })
 //
 //    });
+
+})();

@@ -1,12 +1,12 @@
-<table class="table table-striped table-bordered table-hover table-condensed">
-    <tr>
-        <th>Nom</th>
-        <th>Url</th>
-        <th>Color</th>
-    </tr>
-    <tr ng-repeat="job in jobs">
-        <td class="text-muted"><h6>{{job.name}}</h6></td>
-        <td><a href="{{job.url}}">{{job.url}}</a></td>
-        <td><img ng-src="images/{{job.color}}.png"></td>
-    </tr>
-</table>
+<accordion close-others="true">
+    <accordion-group ng-repeat="job in jobs" is-open="false">
+        <accordion-heading>
+            <span ng-click="loadJob(job.name)"><img ng-src="http://localhost:8090/static/9444ee44/images/32x32/{{job.color == 'notbuilt' ? 'nobuilt' : job.color}}.gif"> {{job.name}}</span>
+        </accordion-heading>
+        <ul>
+            <li>Build number: {{jobDetail.builds.length}}</li>
+            <li>Last successful build: <a href="{{jobDetail.lastSuccessfulBuild.url}}">{{jobDetail.lastSuccessfulBuild.number}}</a></li>
+            <li>Last failed build: <a href="{{jobDetail.lastFailedBuild.url}}">{{jobDetail.lastFailedBuild.number}}</a></li>
+        </ul>
+    </accordion-group>
+</accordion>
