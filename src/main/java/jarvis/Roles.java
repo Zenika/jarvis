@@ -1,4 +1,4 @@
-package dashboard;
+package jarvis;
 
 /**
  * A list of roles for the application.

@@ -1,9 +1,9 @@
-package dashboard.domain.jenkins;
+package jarvis.domain.jenkins;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonView;
 import com.google.common.base.Objects;
-import dashboard.Views;
+import jarvis.Views;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package dashboard.domain.jenkins;
+package jarvis.domain.jenkins;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.google.common.base.Objects;

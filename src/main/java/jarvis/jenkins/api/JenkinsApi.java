@@ -1,7 +1,7 @@
-package dashboard.jenkins.api;
+package jarvis.jenkins.api;
 
-import dashboard.domain.jenkins.Job;
-import dashboard.domain.jenkins.Jobs;
+import jarvis.domain.jenkins.Job;
+import jarvis.domain.jenkins.Jobs;
 import org.springframework.web.client.RestTemplate;
 import restx.factory.Component;
 

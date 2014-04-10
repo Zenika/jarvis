@@ -1,4 +1,4 @@
-package dashboard;
+package jarvis;
 
 import com.google.common.base.Optional;
 import restx.server.JettyWebServer;
@@ -25,7 +25,7 @@ public class AppServer {
          * it with -Drestx.mode=prod or change the default here
          */
         System.setProperty("restx.mode", System.getProperty("restx.mode", "dev"));
-        System.setProperty("restx.app.package", "dashboard");
+        System.setProperty("restx.app.package", "jarvis");
 
         server.startAndAwait();
     }

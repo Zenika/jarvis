@@ -1,4 +1,4 @@
-package dashboard;
+package jarvis;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.Charsets;
@@ -15,7 +15,7 @@ import java.nio.file.Paths;
 public class AppModule {
     @Provides
     public SignatureKey signatureKey() {
-         return new SignatureKey("dashboard 3c74223d-94ca-4374-8d10-6a572caffd9f dashboard-web -5802080431954463112".getBytes(Charsets.UTF_8));
+         return new SignatureKey("jarvis 3c74223d-94ca-4374-8d10-6a572caffd9f jarvis-web -5802080431954463112".getBytes(Charsets.UTF_8));
     }
 
     @Provides
@@ -27,7 +27,7 @@ public class AppModule {
     @Provides
     @Named("app.name")
     public String appName(){
-        return "dashboard-web";
+        return "jarvis-web";
     }
 
     @Provides

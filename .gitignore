@@ -12,4 +12,6 @@
 # RESTx files
 logs
 
+.vagrant
+
 

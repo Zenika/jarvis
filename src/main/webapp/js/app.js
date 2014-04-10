@@ -1,4 +1,4 @@
-var app = angular.module("dashboard", ['ngRoute', 'ngCookies', 'Controllers']);
+var app = angular.module("jarvis", ['ngRoute', 'ngCookies', 'Controllers']);
 
 app.config(function ($routeProvider) {
         $routeProvider.when('/', {templateUrl:'templates/home.html', controller:'HomeController'})

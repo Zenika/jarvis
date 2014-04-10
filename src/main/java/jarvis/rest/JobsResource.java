@@ -1,8 +1,8 @@
-package dashboard.rest;
+package jarvis.rest;
 
-import dashboard.domain.jenkins.Job;
-import dashboard.domain.jenkins.Jobs;
-import dashboard.jenkins.api.JenkinsApi;
+import jarvis.domain.jenkins.Job;
+import jarvis.domain.jenkins.Jobs;
+import jarvis.jenkins.api.JenkinsApi;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import restx.annotations.GET;
@@ -31,7 +31,7 @@ public class JobsResource {
     }
 
     @GET("/job/{jobName}")
-    @Produces("application/json;view=dashboard.Views$Details")
+    @Produces("application/json;view=jarvis.Views$Details")
     @PermitAll
     public Job getJob(String jobName) {
         Job job = jenkinsApi.getJob(jobName);
