@@ -19,3 +19,7 @@ Détruire la VM jenkins et lancer :
 ## Lancement de l'application
 
 Lancer le main de jarvis.AppServer
+
+## Informations sur l'API Remote de Jenkins
+
+[Remote API](https://wiki.jenkins-ci.org/display/JENKINS/Remote+access+API)
