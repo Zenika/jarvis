@@ -1,0 +1,24 @@
+{
+  "name": "jarvis",
+  "preferGlobal": true,
+  "version": "0.0.1",
+  "author": "info-ouest@zenika.com",
+  "contributors": [ 
+    {
+      "name": "Pierre Reliquet",
+      "email": "pierre.reliquet@gmail.com"
+    } 
+  ],
+  "bin": {
+    "http-server": "./bin/http-server"
+  },
+  "keywords": [
+    "ci",
+    "jarvis",
+    "jenkins"
+  ],
+  "dependencies" : {
+    "express"   :  "4.0.0"
+  },
+  "analyze": false
+}
