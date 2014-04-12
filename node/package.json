@@ -3,11 +3,11 @@
   "preferGlobal": true,
   "version": "0.0.1",
   "author": "info-ouest@zenika.com",
-  "contributors": [ 
+  "contributors": [
     {
       "name": "Pierre Reliquet",
       "email": "pierre.reliquet@gmail.com"
-    } 
+    }
   ],
   "bin": {
     "http-server": "./bin/http-server"
@@ -17,8 +17,9 @@
     "jarvis",
     "jenkins"
   ],
-  "dependencies" : {
-    "express"   :  "4.0.0"
+  "dependencies": {
+    "express": "4.0.0",
+    "q": "^1.0.1"
   },
   "analyze": false
 }
