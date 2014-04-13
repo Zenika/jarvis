@@ -21,5 +21,9 @@
     "express": "4.0.0",
     "q": "^1.0.1"
   },
-  "analyze": false
+  "analyze": false,
+  "licenses" : [{
+    "type": "Apache",
+    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+  }]
 }

@@ -37,17 +37,16 @@
 			res.setEncoding('utf8');
 			
 
-			var bodyChunks = [];
+			var body = '';
 			// Handling the chunks
 			res.on('data', function(chunk) {
-				bodyChunks.push(chunk);
+				body += chunk;
 			});
 
 			// Merging the chunks and resolving the promise
 			res.on('end', function() {
-				var body = Buffer.concat(bodyChunks);
-				res.emit('close');
 				deferred.resolve(body);
+				res.emit('close');
 			});
 
 			
