@@ -4,6 +4,11 @@
  */
 (function() {
 	var http = require('http');
+
+	/*
+	 * Here we decide to use Q because promises are going to simplify our javascript code. 
+	 * With promises we can encapsulate the callback hell and avoid nested callback.
+	 */
 	var Q = require('q');
 
 	exports.get = function(hostname, port, path) {
