@@ -1,0 +1,29 @@
+{
+  "name": "jarvis",
+  "preferGlobal": true,
+  "version": "0.0.1",
+  "author": "info-ouest@zenika.com",
+  "contributors": [
+    {
+      "name": "Pierre Reliquet",
+      "email": "pierre.reliquet@gmail.com"
+    }
+  ],
+  "bin": {
+    "http-server": "./bin/http-server"
+  },
+  "keywords": [
+    "ci",
+    "jarvis",
+    "jenkins"
+  ],
+  "dependencies": {
+    "express": "4.0.0",
+    "q": "^1.0.1"
+  },
+  "analyze": false,
+  "licenses" : [{
+    "type": "Apache",
+    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+  }]
+}

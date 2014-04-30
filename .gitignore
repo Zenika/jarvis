@@ -15,3 +15,5 @@ logs
 .vagrant
 
 target
+
+node_modules
