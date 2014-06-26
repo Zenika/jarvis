@@ -1,7 +1,7 @@
 <accordion close-others="true">
     <accordion-group ng-repeat="job in jobs" is-open="false">
         <accordion-heading>
-            <span ng-click="loadJob(job.name)"><img ng-src="http://localhost:8090/static/9444ee44/images/32x32/{{job.color == 'notbuilt' ? 'nobuilt' : job.color}}.gif"> {{job.name}}</span>
+            <span ng-click="loadJob(job.name)"><img ng-src="http://{{Jenkins.url}}:{{Jenkins.port}}/static/9444ee44/images/32x32/{{job.color == 'notbuilt' ? 'nobuilt' : job.color}}.gif"> {{job.name}}</span>
         </accordion-heading>
          <ul>
             <li>Build number: {{jobDetail.builds.length}}</li>
@@ -19,7 +19,7 @@
                 Health status :
                 <ul>
                     <li ng-repeat="health in jobDetail.healthReport">
-                        <img ng-src="http://localhost:8090/static/9444ee44/images/32x32/{{health.iconUrl}}" /> {{health.description}}
+                        <img ng-src="http://{{Jenkins.url}}:{{Jenkins.port}}/static/9444ee44/images/32x32/{{health.iconUrl}}" /> {{health.description}}
                     </li>
                 </ul>
             </li>
