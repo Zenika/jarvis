@@ -4,7 +4,7 @@
             <span ng-click="loadJob(job.name)"><img ng-src="http://{{Jenkins.url}}:{{Jenkins.port}}/static/9444ee44/images/32x32/{{job.color == 'notbuilt' ? 'nobuilt' : job.color}}.gif"> {{job.name}}</span>
         </accordion-heading>
          <ul>
-            <li>Build number: {{jobDetail.builds.length}}</li>
+            <li>Build number: {{jobDetail.lastBuild.number}} - {{jobDetail.lastBuild.actions[1].lastBuiltRevision.SHA1}}</li>
             <li>
                 Last successful build:
                 <a href="{{jobDetail.lastSuccessfulBuild.url}}">

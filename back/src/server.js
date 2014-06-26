@@ -17,7 +17,7 @@
 	 * Returns a promise which is going to provide jenkins jobs.
 	 */
 	var getJobs = function() {
-		return $http.get(constants.jenkins.url, constants.jenkins.port, '/api/json');		
+		return $http.get(constants.jenkins.url, constants.jenkins.port, '/api/json?depth=1');
 	}
 
 	/**
