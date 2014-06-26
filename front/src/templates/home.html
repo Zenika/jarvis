@@ -5,8 +5,18 @@
         </accordion-heading>
          <ul>
             <li>Build number: {{jobDetail.builds.length}}</li>
-            <li>Last successful build: <a href="{{jobDetail.lastSuccessfulBuild.url}}">{{jobDetail.lastSuccessfulBuild.number}}</a></li>
-            <li>Last failed build: <a href="{{jobDetail.lastFailedBuild.url}}">{{jobDetail.lastFailedBuild.number}}</a></li>
+            <li>
+                Last successful build:
+                <a href="{{jobDetail.lastSuccessfulBuild.url}}">
+                    {{jobDetail.lastSuccessfulBuild.timestamp | date:'medium'}}
+                </a>
+            </li>
+            <li>
+                Last failed build:
+                <a href="{{jobDetail.lastFailedBuild.url}}">
+                    {{jobDetail.lastFailedBuild.timestamp | date:'medium'}}
+                </a>
+            </li>
             <li>
                 Modules :
                 <ul>
