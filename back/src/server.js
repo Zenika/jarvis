@@ -7,6 +7,7 @@
 	var express = require('express');
 	// our custom znkHttp wrapper
 	var $http = require('./znkHttp.js');
+  var constants = require('./constants.json');
 
 	// Loading useful objects
 	var app = express();
@@ -16,14 +17,14 @@
 	 * Returns a promise which is going to provide jenkins jobs.
 	 */
 	var getJobs = function() {
-		return $http.get('localhost', 8090, '/api/json');		
+		return $http.get(constants.jenkins.url, constants.jenkins.port, '/api/json');		
 	}
 
 	/**
 	 * Returns a promise which is going to get the information about a job.
 	 */
 	var getJob = function(jobName) {
-		return $http.get('localhost', 8090, '/job/' + jobName + '/api/json');		
+		return $http.get(constants.jenkins.url, constants.jenkins.port, '/job/' + jobName + '/api/json?depth=1');
 	}
 	// Setting parameters
 	app.set('public', '../../front/src/');
