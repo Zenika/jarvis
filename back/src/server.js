@@ -17,14 +17,14 @@
 	 * Returns a promise which is going to provide jenkins jobs.
 	 */
 	var getJobs = function() {
-		return $http.get(constants.jenkins.url, constants.jenkins.port, '/api/json?depth=1');
+		return $http.get(constants.jenkins.url, constants.jenkins.port, constants.jenkins.apiJson);
 	}
 
 	/**
 	 * Returns a promise which is going to get the information about a job.
 	 */
 	var getJob = function(jobName) {
-		return $http.get(constants.jenkins.url, constants.jenkins.port, '/job/' + jobName + '/api/json?depth=1');
+		return $http.get(constants.jenkins.url, constants.jenkins.port, '/job/' + jobName + constants.jenkins.apiJson);
 	}
 	// Setting parameters
 	app.set('public', '../../front/src/');
